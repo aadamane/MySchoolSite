@@ -1,0 +1,55 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ThinkBride Software Labs</title>
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="thinkbride_index.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Jolly+Lodger' rel='stylesheet' type='text/css'>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script type="text/javascript" src="jquery_frm.js"></script>
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
+</head>
+<body>
+<div class="gridContainer clearfix">
+<header id="header_title" class="fluid">ThinkBridge Software Labs</header>
+  <div id="joinus_button" class="fluid">
+  	<button id="frm_joinus" >Join Us</button>
+  </div>
+  
+  <article id="modular_form" class="fluid">
+  	<div id="frm_header" class="fluid"></div>
+  	<form id="frm_modular" title="Modular Form">
+    	<label>Name:</label><br>
+		<input name="frm_name" type="text" required id="frm_name" form="frm_modular" title="Name:" size="40">
+        <br><br>
+        <label>Email:</label><br>
+        <input name="frm_email" type="email" required id="frm_email" size="40">
+        <br><br>
+        <div id="#frm_buttons">
+        <button id="frm_submit">Submit</button><button id="frm_cancel">Cancel</button>
+		</div>
+    </form>
+</article>
+</body>
+</html>
